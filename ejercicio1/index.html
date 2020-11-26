@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="ejercicio1.js"></script>
+		<title>EJERCICIO 1 JAVASCRIPT</title>
+
+
+
+	</head>
+	<body bgcolor=white>
+		<form>
+			<h2 align=center>Cadastro</h2>
+			<div align=center>
+
+				<script>
+					hoje = new Date()
+					dia = hoje.getDate()
+					mes = hoje.getMonth() + 1
+					ano = hoje.getYear() + 1900
+					document.write("<h3>Hoje: " + dia + "/" + mes + "/" + ano + "</h3>")
+				</script>
+				<p><input type=button value="Digitar Nome" onclick="nome=prompt('Seu Nome', '')">
+
+				<input type=button value="Digitar E-mail" onclick="email=prompt('Email', '')">
+
+				<input type=button value="Cadastrar" onclick="escrever(this.form.Area)">
+				<p><textarea rows=10 cols=40 name=Area></textarea>
+
+				</div>
+		</form>
+
+		<a href="https://www.google.com/" onmouseover=""></a>
+	</body>
+</html>
