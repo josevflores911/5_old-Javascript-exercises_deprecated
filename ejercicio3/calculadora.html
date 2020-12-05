@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		#resultado{
+			display: block;
+			text-align: center;
+			font-size: 40px;
+			margin-bottom: 50px;
+			width:300px;
+			height: 100px;
+			line-height: 100px;
+			background-color: #fff;
+			border-radius: 25px;
+			
+			color: black;
+		}
+
+		body{
+			background-color: black;
+			color:white;
+		}
+	</style>
+	
+</head>
+
+<body onload="init();">
+
+	<table align="center">
+		<h1 align="center">Calculadora</h1>
+		<tr>
+			<td colspan="4"><span id="resultado"></span></td>
+		</tr>	
+		<tr>
+			<td><button id="siete">7</button></td>
+			<td><button id="ocho">8</button></td>
+			<td><button id="nueve">9</button></td>
+			<td><button id="division">/</button></td>
+		</tr>
+		<tr>
+			<td><button id="cuatro">4</button></td>
+			<td><button id="cinco">5</button></td>
+			<td><button id="seis">6</button></td>
+			<td><button id="multiplicacion">*</button></td>
+		</tr>
+		<tr>
+			<td><button id="uno">1</button></td>
+			<td><button id="dos">2</button></td>
+			<td><button id="tres">3</button></td>
+			<td><button id="resta">-</button></td>
+		</tr>
+		<tr>
+			<td><button id="igual">=</button></td>
+			<td><button id="reset">C</button></td>
+			<td><button id="zero">0</button></td>
+			<td><button id="suma">+</button></td>
+		</tr>
+	</table>
+
+	<script type="text/javascript" src="calculadora.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+
+<script>
+
+</script>
+
+
+<table style="width:18%" align="center">
+
+	
+	<tr>
+		<td bgcolor="lighblue"  colspan="3"><span id="resultado"></span></td>
+		<td bgcolor="lighblue"><input type="button" value=" C " name="apagar" id="reset"></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="lighblue"  ><button id="siete">7</button></td>
+		<td bgcolor="lighblue"><input style="width: 90%" type="button" value=" 8 " name="val8" id="ocho"></td>
+		<td bgcolor="lighblue"><input style="width: 90%" type="button" value=" 9 " name="val9" id="nueve"></td>
+		<td bgcolor="lighblue"><input style="width: 90%" type="button" value=" + " name="valAdicionar" id="suma"></td>
+	</tr>
+	<tr>
+		<td bgcolor="lighblue"><input  type="button" value=" 4 " name="val4" id="cuatro"></td>
+		<td bgcolor="lighblue"><input type="button" value=" 5 " name="val5" id="cinco"></td>
+		<td bgcolor="lighblue"><input type="button" value=" 6 " name="val6" id="seis"></td>
+		<td bgcolor="lighblue"><input type="button" value=" - " name="valRestar" id="resta"></td>
+	</tr>
+	<tr>
+		<td bgcolor="lighblue"><input type="button" value=" 1 " name="val1" id="uno"></td>
+		<td bgcolor="lighblue"><input type="button" value=" 2 " name="val2" id="dos"></td>
+		<td bgcolor="lighblue"><input type="button" value=" 3 " name="val3" id="tres"></td>
+		<td bgcolor="lighblue"><input type="button" value=" * " name="valMultiplicar" id="multiplicacion"></td>
+	</tr>
+	<tr>
+		<td bgcolor="lighblue"><input type="button" value=" 0 " name="valZero" id="zero"></td>
+		<td bgcolor="lighblue"><input type="button" value=" . " name="valPunto" id="punto"></td>
+		<td bgcolor="lighblue"><input type="button" value=" = " name="valResultado" id="igual"></td>
+		<td bgcolor="lighblue"><input type="button" value=" / " name="valDividir" id="division"></td>
+	</tr>
+
+</table>
+
+
+<script src="calculadora.js"></script>
+
+
+<br>
+<br>
+<br>
+	<form align="center" bgcolor="gray" name="formulario">
+		<H1>Calculadora</H1>
+		<input type="text" size=15 name="ventana">
+		&nbsp
+		<input type="button" value=" C " name="apagar">
+		<p>
+			
+			<input id="val7" type="button" value=" 7 " name="val7">
+			&nbsp
+			&nbsp
+			<input type="button" value=" 8 " name="val8">
+			&nbsp
+			&nbsp
+			<input type="button" value=" 9 " name="val9">
+			&nbsp
+			&nbsp
+			<input type="button" value=" + " name="valAdicionar">
+		<p>
+			<input type="button" value=" 4 " name="val4">
+			&nbsp
+			&nbsp
+			<input type="button" value=" 5 " name="val5">
+			&nbsp
+			&nbsp
+			<input type="button" value=" 6 " name="val6">
+			&nbsp
+			&nbsp
+			<input type="button" value=" - " name="valRestar">
+		<p>
+			<input type="button" value=" 1 " name="val1">
+			&nbsp
+			&nbsp
+			<input type="button" value=" 2 " name="val2">
+			&nbsp
+			&nbsp
+			<input type="button" value=" 3 " name="val3">
+			&nbsp
+			&nbsp
+			<input type="button" value=" * " name="valMultiplicar">
+		<p>
+			<input type="button" value=" 0 " name="valZero">
+			&nbsp
+			&nbsp
+			<input type="button" value=" . " name="valPunto">
+			&nbsp
+			&nbsp
+			<input type="button" value=" = " name="valResultado">
+			&nbsp
+			&nbsp
+			<input type="button" value=" / " name="valDividir">
+
+	</form>
+
+
+
+-->

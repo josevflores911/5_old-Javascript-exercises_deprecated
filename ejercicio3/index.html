@@ -10,6 +10,17 @@
 </head>
 <body>
 
+<h1>Cliente</h1>
+
+<script> 
+	document.write("<pre>" + show(cli1) + "</pre>");
+	document.write("<pre>" + show(cli2) + "</pre>");
+	document.write("<pre>" + show(cli3) + "</pre>");
+	document.write("<pre>" + show(cli4) + "</pre>");
+	document.write("<pre>" + show(cli5) + "</pre>");
+
+</script>
+
 <form>
 	<div align="center">
 		<h2 align=center>Calcula el Factorial</h2>
@@ -23,6 +34,77 @@
 	</div>
 
 </form>
+
+
+<h1>Circulos</h1>
+<script>
+
+c1 = new Circulo(2,2,5); // uso da função construtora
+c2 = new Circulo(0,0,4); // para criar dois circulos
+
+
+c2.x = 1; // definicao de propriedades ...usando o operador “.”
+c2["y"] = 2; // ... usando o vetor associativo
+// uso de propriedades
+document.write("<P>c1: raio=" + c1.r + " (" + c1.x + "," + c1.y + ")");
+document.write("<P>c1: raio=" + c2.r + " (" + c2.x + "," + c2.y + ")");
+
+
+function mostraProps(objeto) {
+props = "";
+for (idx in objeto) {
+props += idx + " = " + objeto[idx] + "\n";
+}
+return props;
+}
+
+
+document.write("<pre>" + mostraProps(c1) + "</pre>");
+document.write("<pre>" + mostraProps(c2) + "</pre>");
+</script>
+
+
+
+<script>
+	
+	
+
+	function soma() {
+
+		//as variaveis a e b deven estar dentro da function
+		//para nao ser inicializadas antes de tempo
+
+		var a = document.formulario.first.value;
+		var b = document.formulario.second.value;
+		
+		document.formulario.result.value = parseFloat(a) + parseFloat(b);	
+
+		//not work because reasign the value c
+		//c=document.formulario.result.value;
+		//c =parseFloat(a) + parseFloat(b);	
+	}
+	
+
+
+</script>
+
+
+<h1>Somador JavaScript0</h1>
+
+<form name = "formulario">
+	
+	<input type="text" name="first" size=5>
+	+
+	<input type="text" name="second" size=5>
+
+	<input type="button" 
+		value=" = " 
+		onclick="soma()"
+		name="resultado">
+
+	<input type="text" name="result" >
+</form>
+
 
 
 
