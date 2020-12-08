@@ -10,16 +10,7 @@
 </head>
 <body>
 
-<h1>Cliente</h1>
 
-<script> 
-	document.write("<pre>" + show(cli1) + "</pre>");
-	document.write("<pre>" + show(cli2) + "</pre>");
-	document.write("<pre>" + show(cli3) + "</pre>");
-	document.write("<pre>" + show(cli4) + "</pre>");
-	document.write("<pre>" + show(cli5) + "</pre>");
-
-</script>
 
 <form>
 	<div align="center">
@@ -35,77 +26,79 @@
 
 </form>
 
+<section style="background-color: lightblue;">
 
-<h1>Circulos</h1>
-<script>
-
-c1 = new Circulo(2,2,5); // uso da função construtora
-c2 = new Circulo(0,0,4); // para criar dois circulos
+	<p>constructor de circulos constructor es diferente de metodos</p>
+		<h1>Circulos</h1>
 
 
-c2.x = 1; // definicao de propriedades ...usando o operador “.”
-c2["y"] = 2; // ... usando o vetor associativo
-// uso de propriedades
-document.write("<P>c1: raio=" + c1.r + " (" + c1.x + "," + c1.y + ")");
-document.write("<P>c1: raio=" + c2.r + " (" + c2.x + "," + c2.y + ")");
+		<script>
+
+		c1 = new Circulo(2,2,5); // uso da função construtora
+		c2 = new Circulo(0,0,4); // para criar dois circulos
 
 
-function mostraProps(objeto) {
-props = "";
-for (idx in objeto) {
-props += idx + " = " + objeto[idx] + "\n";
-}
-return props;
-}
+		c2.x = 1; // definicao de propriedades ...usando o operador “.”
+		c2["y"] = 2; // ... usando o vetor associativo
+		// uso de propriedades
+		document.write("<P>c1: raio=" + c1.r + " (" + c1.x + "," + c1.y + ")");
+		document.write("<P>c1: raio=" + c2.r + " (" + c2.x + "," + c2.y + ")");
 
 
-document.write("<pre>" + mostraProps(c1) + "</pre>");
-document.write("<pre>" + mostraProps(c2) + "</pre>");
-</script>
+		function mostraProps(objeto) {
+		props = "";
+		for (idx in objeto) {
+		props += idx + " = " + objeto[idx] + "\n";
+		}
+		return props;
+		}
+
+
+		document.write("<pre>" + mostraProps(c1) + "</pre>");
+		document.write("<pre>" + mostraProps(c2) + "</pre>");
+		</script>
+
+</section>
 
 
 
-<script>
-	
-	
 
-	function soma() {
+<section align="center">
 
-		//as variaveis a e b deven estar dentro da function
-		//para nao ser inicializadas antes de tempo
+	<p >un loop que muestra los datos de n clientes</p>
+	<h1>Cliente</h1>
 
-		var a = document.formulario.first.value;
-		var b = document.formulario.second.value;
+	<script> 
+		document.write("<pre>" + show(cli1) + "</pre>");
+		document.write("<pre>" + show(cli2) + "</pre>");
+		document.write("<pre>" + show(cli3) + "</pre>");
+		document.write("<pre>" + show(cli4) + "</pre>");
+		document.write("<pre>" + show(cli5) + "</pre>");
+
+	</script>
+</section>
+
+<section style="background-color: lightblue">
+
+	<p>calcula los valores ingresados como input (string) y los devuelve como numero(number)</p>
+
+	<h1>Somador JavaScript0</h1>
+
+	<form name = "formulario">
 		
-		document.formulario.result.value = parseFloat(a) + parseFloat(b);	
+		<input type="text" name="first" size=5>
+		+
+		<input type="text" name="second" size=5>
 
-		//not work because reasign the value c
-		//c=document.formulario.result.value;
-		//c =parseFloat(a) + parseFloat(b);	
-	}
-	
+		<input type="button" 
+			value=" = " 
+			onclick="soma()"
+			name="resultado">
 
+		<input type="text" name="result" disabled>
+	</form>
 
-</script>
-
-
-<h1>Somador JavaScript0</h1>
-
-<form name = "formulario">
-	
-	<input type="text" name="first" size=5>
-	+
-	<input type="text" name="second" size=5>
-
-	<input type="button" 
-		value=" = " 
-		onclick="soma()"
-		name="resultado">
-
-	<input type="text" name="result" >
-</form>
-
-
+</section>
 
 
 </body>

@@ -38,7 +38,7 @@
 						
 		}
 
-
+/* -------esta parte esta incompleta(la formula no fue aplicada solo se calculan los elementos de la formula) y los muestra en consola-----*/
 		
 
 	function combinatoria (quadro,param = 3){
@@ -63,10 +63,12 @@
 			console.log(z);
 		}
 
-/*----------------------------------------*/
+/*------constructor de circulos--------*/
 	
 	console.log("Circulo");
 	//metodo
+	
+	/* este metodo no estaba haciendo nada
 	function imprimir(){
 		
 		//console.log("c: raio = " + c2.r + " (" + this.x + "," + c1.y + ")");
@@ -81,7 +83,7 @@
 
 		 //console.log(props);
 	}
-
+	*/
 
 	//constructor
 	function Circulo(x, y, r){
@@ -103,7 +105,7 @@
 	//c2.imprime();
 
 
-/*---------------------------------------------*/
+/*-----------constructor de datos de varios clientes con loops -------------*/
 
 function Cliente(nome, email, telefone){
 	this.nome = nome;
@@ -127,5 +129,30 @@ cli2 = new Cliente("pedro", "pedr@", 132321321);
 cli3 = new Cliente("juan", "jua@", 798798798);
 cli4 = new Cliente("jose", "jose@", 1111111);
 cli5 = new Cliente("Marco", "marco@", 22222222);
+
+
+
+
+/*calculo de dos valores ingresados*/
+	
+	
+
+function soma() {
+
+	//as variaveis a e b deven estar dentro da function
+	//para nao ser inicializadas antes de tempo
+
+	var a = document.formulario.first.value;
+	var b = document.formulario.second.value;
+
+	document.formulario.result.value = parseFloat(a) + parseFloat(b);	
+
+	//not work because reasign the value c
+	//c=document.formulario.result.value;
+	//c =parseFloat(a) + parseFloat(b);	
+}
+	
+
+
 
 

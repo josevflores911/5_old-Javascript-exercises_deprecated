@@ -2,6 +2,8 @@ autor = "Cyrano de Bergerac";
 document.write("<b> <p>Hoje:" + document.lastModified + "</b>");
 document.write("<p>Autor: " + autor);
 
+
+/*******************************************************/
 function soma(a, b) {
 	return a + b;
 }
@@ -10,8 +12,7 @@ resultado = soma(5, 6);
 document.write("<P>A soma de 5 e 6 é " + resultado);
 
 
-
-
+/****************************************/
 
 var nome;
 var email;

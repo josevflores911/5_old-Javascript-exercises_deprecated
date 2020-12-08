@@ -3,10 +3,14 @@ for (i = -40; i < 100; i = i + 10) {
 fahrenheit = ( i * ( 9/5 )) - 32;
 
 document.write("<p>fahr: " + fahrenheit  +"</p>");
+
+
 }
+document.write("<p>fahr: ---------------------------------------------</p>");
 
 /*---------------Ejercicio 2-------------------*/
 	
+	//math.maxvalue podria hacerse asi tambien
 
 
 	var grupo = [10,100,190,230,200];
@@ -38,7 +42,7 @@ document.write("<p>fahr: " + fahrenheit  +"</p>");
 	}
 
 
-
+document.write("<p>math max: ---------------------------------------------</p>");
 
 	/*valor = prompt("Digite um número");
 	numero = parseInt(valor);
