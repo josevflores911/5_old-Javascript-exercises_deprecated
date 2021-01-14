@@ -74,20 +74,29 @@ function rollingback(){
 /*------------------------------------------------------------------------*/
 
 
+//se uinicia la variable 
 var variable1;
+
+//accion que se ejecuta al seleccionar el elemento que posse la accion inverter con
+//con el argumento quadro  -> this.form.caja2 = quadro
 function inverter(quadro){
 	
+//tomma el valor segun el id en el documento en curso	
 	variable1 = document.getElementById("caja1").value;
 
-	contrario = variable1.split(" ");
+//convierte un elemento en arreglo segun la regla indicada entre las comillas
+	contrario = variable1.split("");
 
+//invierte los elementos de un arreglo
 	mix = contrario.reverse(); 
 
-	mixed = mix.join(" ");
-
+//convierte un arreglo en un valor unico con el elemento entre las comillas
+	mixed = mix.join("");
+//imprime en el cuadro de la derecha
 	quadro.value +=mixed;
 
-	console.log(variable1);
+//imprime en consola
+	console.log(contrario);
 
 }
 
