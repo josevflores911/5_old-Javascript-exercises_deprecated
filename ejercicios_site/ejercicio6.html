@@ -1,0 +1,38 @@
+<p id="demo"></p>
+
+<script>
+	look="2022-12-24";
+	var navidad = new Date(look);
+
+
+	///var descomposed = navidad.toString().split(" ");
+	//suport1 = navidad.getYear()+1900;
+	//suport2=navidad.toString();
+
+	dia1 = navidad.getDate();
+	mes1 = navidad.getMonth()+1;
+	ano1 = navidad.getYear()+1900;
+
+	
+
+
+	var hoy = new Date();
+	dia = hoy.getDate();
+	mes = hoy.getMonth()+1;
+	ano = hoy.getYear()+1900;
+
+	diaTotal=(31-dia) + 24
+	mesTotal=((mes1-mes)-1) *31
+
+	total = diaTotal+ mesTotal;
+	
+
+
+	console.log(total);
+		
+	document.getElementById("demo").textContent=total;
+
+
+</script>
+
+<h1>50 min</h1>

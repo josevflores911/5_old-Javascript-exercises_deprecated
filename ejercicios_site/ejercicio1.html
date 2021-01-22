@@ -1,0 +1,57 @@
+
+<p id="demo">
+<script>
+
+/*15 a 20 minutos por ejercicios y deben ser 10*/
+
+
+function test(){
+	var a = new Date();
+
+	b = a.getDay();
+
+	switch(b){
+		case 0:
+			result ="lunes";
+			break;
+		case 1:
+			result ="martes";
+			break;
+		case 2:
+			result ="miercoles";
+			break;
+		case 3:
+			result ="jueves";
+			break;
+		case 4:
+			result ="viernes";
+			break;
+		case 5:
+			result ="sabado";
+			break;
+		case 6:
+			result ="domingo";
+			break;
+	}
+
+
+	c = a.getHours();
+	d = a.getMinutes();
+	e = a.getSeconds();
+	
+	hora = c+":"+d+":"+e;
+
+
+	f =[hora,'<p>hola</p>',result]
+
+	return f;	
+}
+
+
+
+test();
+
+document.getElementById("demo").innerHTML= f;
+</script>
+
+<h1>24 minutos</h1>

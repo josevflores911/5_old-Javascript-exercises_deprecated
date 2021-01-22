@@ -1,0 +1,81 @@
+
+<body align="center">
+
+<h2>ejercicio 7</h2>
+<p id="demo"></p>
+<form>
+	
+	<textarea rows=10 cols=20 name="Area" style="text-align: center;padding-top: 10px;"></textarea><br>
+
+	<input type=button value="Cadastrar" onclick="buscando(this.form.Area)" >
+</form>
+
+<script>
+
+
+var z=0;
+
+arreglo=[];
+
+function buscando(quadro){
+
+
+for( i = 2014 ; i <= 2050 ; i++){
+	j=1;
+	for( j = 1; j <= 12 ; j++){
+		k=1;
+		for( k = 1 ; k <= 31 ; k++){
+			
+			
+				var fecha=i+"-"+j+"-"+k;
+				var fechaSistema = new Date(fecha);
+			
+
+			if(j == 1 && k == 1){
+				
+				
+				dia = fechaSistema.getDay();
+
+				if (dia == 0){
+					
+					
+
+					arreglo[z]=i;
+
+					//quadro.value+=i;
+
+					//console.log(i);
+					//console.log(arreglo[z]);
+
+					z++;
+				
+				}
+				
+
+				
+			}
+		}
+	}
+}
+
+console.log(arreglo);
+
+for(i=0; i < arreglo.length; i++){
+	quadro.value+=arreglo[i]+`\n`;
+}
+
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+<h1>23 minutes</h1>
+
+</body>

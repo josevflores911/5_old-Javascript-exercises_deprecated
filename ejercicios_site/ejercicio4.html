@@ -1,0 +1,29 @@
+<p>ejercicio 6</p>
+
+<input type="text" id="valor" name="valor">
+<button onclick="determina()">try it</button>
+<p id="demo"></p>
+
+<script>
+	function determina(){
+		var ano = document.getElementById("valor").value;
+
+		bisiesto = ano % 4;
+
+		bisiesto == 0 ?document.getElementById("demo").innerHTML ="es bisiesto" :document.getElementById("demo").innerHTML ="no es bisiesto";
+/*
+		if (bisiesto == 0){
+			document.getElementById("demo").innerHTML ="es bisiesto";
+		}else{
+			document.getElementById("demo").innerHTML ="no es bisiesto";
+		}
+*/
+		//var asistente = new Date();
+
+
+	}
+	
+
+</script>
+
+<h1>8 minutos</h1>
